@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Image Gallery</h1>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/10/600/400" alt="Nature 1">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/id/103/600/400" alt="City 1">
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="modal">
+        <span class="close">&times;</span>
+        <button class="prev">&#10094;</button>
+        <img class="modal-content" id="modal-img">
+        <button class="next">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
